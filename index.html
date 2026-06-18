@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Blocks</title>
     <link rel="stylesheet" href="./css/panel.css">
-    <link rel="stylesheet" href="./css/welcome.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-    <span class="welcome">Memory</span>
-    <span class="welcome">Blocks</span>
+    <!-- 数字面板 -->
+    <div id="data-panel">
+        <header>Memory Blocks</header>
+        <div id="goal">
+            <span>分数:</span>
+            <span id="goal-number">0</span>
+        </div>
+        <div id="round">
+            <span>回合:</span>
+            <span id="round-number">0</span>
+        </div>
+        <div id="high-score">
+            <span>最高分:</span>
+            <span id="high-score-number">0</span>
+        </div>
+        <div id="time">
+            <span>时间:</span>
+            <span id="time-number">0</span>
+        </div>
+    </div>
 
-    <div id="panel">
+    <!-- 四个按钮 -->
+    <div id="block-panel">
         <div class="row">
             <div id="block-0" class="block"></div>
             <div id="block-1" class="block"></div>
@@ -21,6 +40,11 @@
             <div id="block-3" class="block"></div>
         </div>
     </div>
+
+    <footer>
+        <span>© 2026 Memory Blocks. All rights reserved.</span>
+        <span>Built with ❤️ by Lin Sifan</span>
+    </footer>
 </body>
 <script src="./main.js"></script>
 </html>

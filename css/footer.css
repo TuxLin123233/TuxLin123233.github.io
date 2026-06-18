@@ -1,0 +1,14 @@
+footer{
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+footer span{
+    display: block;
+    font-family: "song";
+    width: 90vw;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 12px;
+}
