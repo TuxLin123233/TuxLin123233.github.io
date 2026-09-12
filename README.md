@@ -60,4 +60,4 @@ python3 -m http.server 8080
 
 [MIT](LICENSE)
 
-Copyright © 2025 林思帆
+Copyright © 2025 Lin Sifan
