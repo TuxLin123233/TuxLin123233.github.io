@@ -1,0 +1,140 @@
+@font-face{
+    font-family: "siyuan";
+    src: url("./SourceHanSansSC-Regular-2.otf");
+}
+
+:root{
+    --backcolor: #FAF8EF;
+    --fontcolor: #776e65;
+    --scoreback: #bbada0;
+    --buttonback: #ac927b;
+}
+
+*{
+    font-family: "siyuan";
+}
+
+body{
+    background-color: var(--backcolor);
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+#infor{
+    width: 330px;
+
+    display: flex;
+    position: relative;
+    margin: auto;
+
+    justify-content: space-between;
+}
+
+#score, #times{
+    width: 90px;
+    height: 70px;
+
+    box-sizing: border-box;
+    padding-top: 10px;
+
+    background-color: var(--scoreback);
+
+    border-radius: 5px;
+}
+
+#times-number, #score-number{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.topic{
+    color: #eee4da;
+    text-align: center;
+    font-weight: bolder;
+
+    position: relative;
+    margin-bottom: 2px;
+}
+
+#future-block{
+    width: 59px;
+    height: 59px;
+
+    border: 6px solid var(--scoreback);
+    border-radius: 3px;
+
+    text-align: center;
+    line-height: 59px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--fontcolor);
+}
+
+#borad{
+    width: 330px;
+    height: 330px;
+
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+
+    background-color: var(--scoreback);
+    border-radius: 6px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row div{
+    width: 67px;
+    height: 67px;
+
+    position: relative;
+    margin-top: 12px;
+
+    border-radius: 3px;
+
+    text-align: center;
+    line-height: 67px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--fontcolor);
+}
+
+#force{
+    width: 320px;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.forcing{
+    width: 100px;
+    height: 70px;
+
+    border-radius: 10px;
+    background-color: var(--buttonback);
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#author{
+    width: 90vw;
+    text-align: center;
+
+    position: absolute;
+    bottom: 5px;
+}

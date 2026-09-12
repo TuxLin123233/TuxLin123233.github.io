@@ -3,48 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Blocks</title>
-    <link rel="stylesheet" href="./css/panel.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./icon.png">
+    <title>重力2048</title>
 </head>
 <body>
-    <!-- 数字面板 -->
-    <div id="data-panel">
-        <header>Memory Blocks</header>
-        <div id="goal">
-            <span>分数:</span>
-            <span id="goal-number">0</span>
+    <!-- 信息 -->
+    <div id="infor">
+        <!-- 分数 -->
+        <div id="score">
+            <div class="topic">分数</div>
+            <div id="score-number">0</div>
         </div>
-        <div id="round">
-            <span>回合:</span>
-            <span id="round-number">0</span>
-        </div>
-        <div id="high-score">
-            <span>最高分:</span>
-            <span id="high-score-number">0</span>
-        </div>
-        <div id="time">
-            <span>时间:</span>
-            <span id="time-number">0</span>
+        <!-- 未来方块 -->
+        <div id="future-block"></div>
+        <!-- 次数 -->
+        <div id="times">
+            <div class="topic">次数</div>
+            <div id="times-number">0</div>
         </div>
     </div>
 
-    <!-- 四个按钮 -->
-    <div id="block-panel">
+    <!-- 游戏棋盘 -->
+    <div id="borad">
         <div class="row">
-            <div id="block-0" class="block"></div>
-            <div id="block-1" class="block"></div>
+            <div id="row0-0"></div>
+            <div id="row0-1"></div>
+            <div id="row0-2"></div>
+            <div id="row0-3"></div>
         </div>
+
         <div class="row">
-            <div id="block-2" class="block"></div>
-            <div id="block-3" class="block"></div>
+            <div id="row1-0"></div>
+            <div id="row1-1"></div>
+            <div id="row1-2"></div>
+            <div id="row1-3"></div>
+        </div>
+
+        <div class="row">
+            <div id="row2-0"></div>
+            <div id="row2-1"></div>
+            <div id="row2-2"></div>
+            <div id="row2-3"></div>
+        </div>
+
+        <div class="row">
+            <div id="row3-0"></div>
+            <div id="row3-1"></div>
+            <div id="row3-2"></div>
+            <div id="row3-3"></div>
         </div>
     </div>
 
-    <footer>
-        <span>© 2026 Memory Blocks. All rights reserved.</span>
-        <span>Built with ❤️ by Lin Sifan</span>
-    </footer>
+    <!-- 重力控制按钮 -->
+    <div id="force">
+        <div class="forcing" id="force-left">
+            <img src="./arrow-left.svg" alt="左箭头" width="50px">
+        </div>
+        <div class="forcing" id="force-right">
+            <img src="./arrow-right.svg" alt="右箭头" width="50px">
+        </div>
+    </div>
+
+    <div id="author">
+        Copyright © 2025 林思帆
+    </div>
 </body>
-<script src="./main.js"></script>
 </html>
+
+<script src="./main.js"></script>
